@@ -41,7 +41,7 @@ print("FETCHING INFO")
 x = app.get_me()
 
 print("PARSING INFO")
-BOT_NAME = x.first_name + (x.last_name + "")
+BOT_NAME = x.first_name + (x.last_name or "")
 BOT_UNAME = x.username
 BOT_ID = x.id
 BOT_MENTION = x.mention
