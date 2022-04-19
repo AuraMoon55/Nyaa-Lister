@@ -11,7 +11,7 @@ API_ID = 2919867
 API_HASH = "90dd95178a8d13a69bfdbc7da68d23a4"
 
 TOKEN = "1954044423:AAGGfY1GACbSJxZGGC0VSW06OtD78MriNJc"
-_mongo_client = MongoClient("")
+_mongo_client = MongoClient("mongodb+srv://abc:abc@cluster0.dxxoi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db = _mongo_client.nyaa
 
 
