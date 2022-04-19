@@ -1,0 +1,9 @@
+pyrogram
+tgcrypto
+requests
+bs4
+motor
+asyncio
+pymongo
+dnspython
+python-dotenv
