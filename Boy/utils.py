@@ -77,7 +77,7 @@ def get_feed():
     tits.append(Fuck)
   return tits
 
-
+"""
 async def save_latest(anime):
   jso = {
     "anime": anime
@@ -95,3 +95,4 @@ async def get_latest():
     return x["anime"]
   else:
     return 
+"""
