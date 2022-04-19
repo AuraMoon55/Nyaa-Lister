@@ -83,9 +83,15 @@ async def save_latest(anime):
     "anime": anime
   }
   z = get_latest()
-  await nyaadb.delete_one({"anime": z})
+  if z:
+    await nyaadb.delete_one({"anime": z})
+  else:
+    pass
   return await nyaadb.insert_one(jso)
 
 async def get_latest():
   x = await nyaadb.find()
+  if x:
     return x["anime"]
+  else:
+    return 
