@@ -2,6 +2,7 @@ from Boy import BOT_NAME, BOT_UNAME, BOT_ID, BOT_MENTION, app, LOGS
 from pyrogram import filters, idle
 from pyrogram.types import InlineKeyboardMarkup as ikm, InlineKeyboardButton as ikb
 from .utils import get_feed, get_latest, save_latest
+import time
 
 @app.on_message(filters.command("start"))
 async def _start(bot, message):
