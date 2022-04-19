@@ -1,6 +1,6 @@
 from os import getenv
 from dotenv import load_dotenv
-from program import Client
+from pyrogram import Client
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 
 
